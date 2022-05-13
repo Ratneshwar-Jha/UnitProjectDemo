@@ -30,10 +30,20 @@ namespace UnitTestProject1
             
         }
 
-        /*private IWebDriver GetChromeDriver()
+        [TestMethod]
+        public void TestMethod2()
         {
-            var outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            return new ChromeDriver(outPutDirectory);
-        }*/
+           
+            IWebDriver driver = new ChromeDriver();
+
+   
+           driver.Navigate().GoToUrl("https://www.google.com/");
+            Assert.IsTrue(true);
+            Console.WriteLine(driver.Title);
+            Assert.AreEqual("Google", driver.Title);
+
+        }
+
+       
     }
 }
