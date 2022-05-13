@@ -27,6 +27,7 @@ namespace UnitTestProject1
             Assert.IsTrue(true);
             Console.WriteLine(driver.Title);
             Assert.AreEqual("Home | Ultimate QA", driver.Title);
+            driver.Close();
             
         }
 
@@ -41,6 +42,7 @@ namespace UnitTestProject1
             Assert.IsTrue(true);
             Console.WriteLine(driver.Title);
             Assert.AreEqual("Google", driver.Title);
+            driver.Close();
 
         }
 
