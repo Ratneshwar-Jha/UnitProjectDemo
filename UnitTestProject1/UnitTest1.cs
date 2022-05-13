@@ -40,7 +40,7 @@ namespace UnitTestProject1
            driver.Navigate().GoToUrl("https://www.google.com/");
             Assert.IsTrue(true);
             Console.WriteLine(driver.Title);
-            Assert.AreEqual("Google", driver.Title);
+            Assert.AreEqual("Gooogle", driver.Title);
 
         }
 
